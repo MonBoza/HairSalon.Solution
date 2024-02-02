@@ -1,7 +1,10 @@
 @{
-  Layout="_Layout";
+  Layout = "_Layout";
 }
-    <h1>Welcome ProjectName!</h1>
-    <a href='/items/new'>Add a new item</a>
-    <br />
-    <a href='/items'>See list of items</a>
+
+<div>
+  <h1 class="display-4">Welcome to Eau Claire's Salon Tracker</h1>
+</div>
+
+<button>@Html.ActionLink("See all Stylist", "Index", "stylists")</button>
+<button>@Html.ActionLink("See all Clients", "Index", "clients")</button>

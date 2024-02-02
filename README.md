@@ -1,6 +1,6 @@
-# (Application Name)
+# Eau Claire's Hair Salon
 
-## (Brief Description of Application)
+## An MVC web application to manage a hair salon employees and their clients
 
 ### By Monica Barboza
 
@@ -15,49 +15,53 @@
 
 ## Description
 
+This app allows the user to keep track of the employees(hairStylists) and give the user the ability to add and edit the stylist client list.
+
 ## Database Setup
+
+* Navigate to the HairSalon directory
 
 * Install MySqlConnector Package
 
-```bash
-dotnet add package MySqlConnector -v 2.2.0
+    ```bash
+    dotnet add package MySqlConnector -v 2.2.0
 
-```
+    ```
+
 
 1. In the Navigator>Administration window, select Data Import/Restore
 
 2. In Import Options select Import from Self-Contained File.
 
 3. Under Default Schema to be Imported to, Select the "New" button
-    * Enter the name of your database "project_name"
+    * Enter the name of your database "monica_barboza"
     * Click OK
 
 4. Navigate to the tab called Import Progress and click Start Import at the bottom right corner of the window.
-
 
 ## Setup/Installation Requirements
 
 1. Open terminal or command prompt.
 2. Clone the repository by running the following command to your desktop:
 
-```bash
-git clone https://github.com/MonBoza/project.git
-```
+    ```bash
+    git clone https://github.com/MonBoza/HairSalon.Solution.git
+    ```
 
-3. Within the production directory "ProjectName", create new file called appsettings.json
+3. Within the production directory "HairSalon", create new file called appsettings.json
 
-4. Within appsettings.json, put in the following code replacing the <code>uid</code> and the <code>pwd</code> values with youre own username and password for MySQL. 
+4. Within appsettings.json, put in the following code replacing the <code>uid</code> and the <code>pwd</code> values with your own username and password for MySQL.
 
 ```bash
 {
   "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=to_do_list_with_mysqlconnector;uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE];",
-      "TestConnection": "Server=localhost;Port=3306;database=to_do_list_with_mysqlconnector_test;uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE];"
+    "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR-DB-NAME];uid=[YOUR-USER-HERE];pwd=[YOUR-PASSWORD-HERE];"
   }
 }
 ```
 
 5.  Make sure .gitignore is added to the repository.
+
 6. Run
 
 ```bash
@@ -66,22 +70,7 @@ dotnet build
 
  in your terminal.
 
-## To Run Tests
-
-* Run tests by navigating to the test directory and running
-
-```bash
-dotnet restore
-```
-
-and then run
-
-```bash
-dotnet test
-```
-
-* Tests are located in the Project.Test directory.
-* Open the project in your favorite code editor.
+7. Open the project in your favorite code editor.
 
 ## Known Bugs
 
@@ -100,4 +89,4 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 Email: (mailto:<MonBoza@gmail.com>)
 
-Copyright (c) Month day, 2024 Monica Barboza
+Copyright (c) February 02, 2024 Monica Barboza
