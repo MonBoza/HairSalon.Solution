@@ -1,7 +1,6 @@
 @{
   Layout="_Layout";
 }
-
 @model HairSalon.Models.Stylist
 
 <h2>Edit</h2>
@@ -14,9 +13,12 @@
 
  @Html.LabelFor(model => model.Name)
  @Html.EditorFor(model => model.Name, new {@required = "required"})
+ @Html.LabelFor(model => model.Specialties)
+ @Html.EditorFor(model => model.Specialties, new {@required = "required"})
  @Html.ValidationMessageFor(model => model.Name, "required", new { @class = "text-danger" })
 
-  <input Name="submit" value="Save" />
+ <input type="submit" value="Save" class="btn btn-primary" />
+
 }
 
 <p>@Html.ActionLink("Back to List", "Index")</p>

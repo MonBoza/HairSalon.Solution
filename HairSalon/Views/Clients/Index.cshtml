@@ -15,10 +15,12 @@
 
 @foreach (Client client in Model)
 {
-  <div>
-    <h4>@Html.ActionLink($"{client.ClientName}","Details", new {id = client.ClientId})</h4>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">@Html.ActionLink($"{client.ClientName}","Details", new {id = client.ClientId})</h4>
+    </div>
   </div>
 }
 
-<div>@Html.ActionLink("Add client", "Create")</div>
-<div>@Html.ActionLink("Return Home", "Index", "Home")</div>
+<div>@Html.ActionLink("Add client", "Create", null, new { @class = "btn btn-primary" })</div>
+<div>@Html.ActionLink("Return Home", "Index", "Home", null, new { @class = "btn btn-secondary" })</div>

@@ -1,33 +1,33 @@
 @{
-  Layout= "_Layout";
+  Layout = "_Layout";
 }
 
 @model HairSalon.Models.Client
 @using HairSalon.Models;
 
-
-
 <h4>Add a new Client</h4>
 
-<p> You need to have at least one stylist before you can add an client!</p>
+<p>You need to have at least one stylist before you can add a client!</p>
 <p>Go to @Html.ActionLink("this page", "Create", "Stylists") to add a Stylist.</p>
 
 @using (Html.BeginForm())
 {
-  @Html.LabelFor(model => model.ClientName)
-  @Html.TextBoxFor(model => model.ClientName, new {@required = "required"} )
-    <br /><br />
-  @Html.LabelFor(model => model.Notes)
-  @Html.TextBoxFor(model => model.Notes, new {@required = "required"} )
-    <br /><br />
+  <div class="form-group">
+    @Html.LabelFor(model => model.ClientName)
+    @Html.TextBoxFor(model => model.ClientName, new { @class = "form-control", @required = "required" })
+  </div>
 
- @Html.LabelFor(model => model.Stylist)
- @Html.DropDownList("StylistId")
+  <div class="form-group">
+    @Html.LabelFor(model => model.Notes)
+    @Html.TextBoxFor(model => model.Notes, new { @class = "form-control", @required = "required" })
+  </div>
 
-<br /><br />
-    <br /><br />
+  <div class="form-group">
+    @Html.LabelFor(model => model.Stylist)
+    @Html.DropDownList("StylistId", null, "Select a Stylist", new { @class = "form-control" })
+  </div>
 
-  <input type="submit" value="Add new client" />
+  <input type="submit" value="Add new client" class="btn btn-primary" />
 }
-<br /><br />
+
 <p>@Html.ActionLink("Show all clients", "Index")</p>

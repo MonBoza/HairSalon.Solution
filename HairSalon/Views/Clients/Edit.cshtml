@@ -14,16 +14,22 @@
 {
   @Html.HiddenFor(model => model.ClientId)
 
-  @Html.LabelFor(model => model.ClientName)
-  @Html.EditorFor(model => model.ClientName)
+  <div class="form-group">
+    @Html.LabelFor(model => model.ClientName)
+    @Html.EditorFor(model => model.ClientName)
+  </div>
 
-  @Html.LabelFor(model => model.Notes)
-  @Html.EditorFor(model => model.Notes)
+  <div class="form-group">
+    @Html.LabelFor(model => model.Notes)
+    @Html.EditorFor(model => model.Notes)
+  </div>
 
-  @Html.LabelFor(model => model.Stylist)
-  @Html.DropDownList("StylistId")
+  <div class="form-group">
+    @Html.LabelFor(model => model.Stylist)
+    @Html.DropDownList("StylistId", null, htmlAttributes: new { @class = "form-control" })
+  </div>
 
-  <input type="submit" value="Save" />
+  <input type="submit" value="Save" class="btn btn-primary" />
 }
 
 <div>

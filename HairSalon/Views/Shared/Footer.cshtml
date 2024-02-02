@@ -1,1 +1,11 @@
+<div class="footer">
+  <br />
+<p>Search keyword to find a specific Client </p>
+
+  @using (Html.BeginForm("Index", "Clients", FormMethod.Get))
+  {
+    <input type="text" name="searchQuery" />
+    <input type="submit" value="Search for Stylist" />
+  }
+</div>
 <div id="footer">Eau Claire's Salon Employee Organizer</div>
