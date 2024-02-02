@@ -8,6 +8,7 @@ namespace HairSalon.Models
         public string ClientName { get; set; }
         public string Notes { get; set; }
         public int StylistId { get; set; }
+        public Stylist Stylist { get; set;}
     }
    
 }

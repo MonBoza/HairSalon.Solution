@@ -12,10 +12,14 @@
   <div class="form-group">
     @Html.LabelFor(model => model.Name)
     @Html.TextBoxFor(model => model.Name, new {@required = "required"})
+      <br /><br />
     @Html.LabelFor(model => model.Specialties)
     @Html.TextBoxFor(model => model.Specialties, new {@required = "required"})
+      <br /><br />
     <input type="submit" value="add new stylist">
   </div>
   }
+  <br />
+  <hr />
 
   <button>@Html.ActionLink("Show all stylists", "Index")</button>

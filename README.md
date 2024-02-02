@@ -49,33 +49,29 @@ This app allows the user to keep track of the employees(hairStylists) and give t
     ```
 
 3. Within the production directory "HairSalon", create new file called appsettings.json
-
 4. Within appsettings.json, put in the following code replacing the <code>uid</code> and the <code>pwd</code> values with your own username and password for MySQL.
 
-```bash
-{
-  "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR-DB-NAME];uid=[YOUR-USER-HERE];pwd=[YOUR-PASSWORD-HERE];"
-  }
-}
-```
+    ```bash
+    {
+      "ConnectionStrings": {
+        "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR-DB-NAME];uid=[YOUR-USER-HERE];pwd=[YOUR-PASSWORD-HERE];"
+      }
+    }
+    ```
 
-5.  Make sure .gitignore is added to the repository.
-
+5. Make sure .gitignore is added to the repository.
 6. Run
 
-```bash
-dotnet build
-```
+    ```bash
+    dotnet build
+    ```
 
  in your terminal.
-
 7. Open the project in your favorite code editor.
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* no Known bugs
 
 ## License
 
@@ -90,3 +86,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 Email: (mailto:<MonBoza@gmail.com>)
 
 Copyright (c) February 02, 2024 Monica Barboza
+
+### SQL Schema Diagram
+
+![Schema Diagram](image.png)

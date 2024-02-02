@@ -1,10 +1,11 @@
 @{
   Layout = "_Layout";
 }
+@using HairSalon.Models;
 
-<div>
-  <h1 class="display-4">Welcome to Eau Claire's Salon Tracker</h1>
-</div>
+<h2>Eau Claire's Salon</h2>
+<h5>A place to track your Stylists and their clients.</h5>
+<br/>
 
-<button>@Html.ActionLink("See all Stylist", "Index", "stylists")</button>
-<button>@Html.ActionLink("See all Clients", "Index", "clients")</button>
+<button>@Html.ActionLink("See all Stylist", "Index", "Stylists" )</button>
+<button>@Html.ActionLink("See all Clients", "Index", "Clients")</button>
