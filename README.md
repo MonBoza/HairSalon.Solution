@@ -11,45 +11,63 @@
 * MS TEST
 * Bootstrap
 * MySQL
+* MySWL Workbench
+* EF Core
 * ASP Core MVC MSBuild
 
 ## Description
 
-This app allows the user to keep track of the employees(hairStylists) and give the user the ability to add and edit the stylist client list.
+How to Use:
 
-## Database Setup
+Stylist Management:
 
-* Navigate to the HairSalon directory
+* Add new stylists by providing their name and specialties.
+* Edit existing stylist details as needed.
 
-* Install MySqlConnector Package
+Client Management:
 
-    ```bash
-    dotnet add package MySqlConnector -v 2.2.0
+* Add clients with their names, notes, and link them to specific stylists.Update client information as preferences or details change.
 
-    ```
+Search Function:
 
+* Use the search bar to quickly find clients based on keywords.
+* Enhance customer service by retrieving relevant information efficiently.
 
-1. In the Navigator>Administration window, select Data Import/Restore
+Notes Section:
 
-2. In Import Options select Import from Self-Contained File.
+* Leave and view notes for each client to personalize their salon experience.
 
-3. Under Default Schema to be Imported to, Select the "New" button
-    * Enter the name of your database "monica_barboza"
-    * Click OK
-
-4. Navigate to the tab called Import Progress and click Start Import at the bottom right corner of the window.
+This salon management application is tailored to meet the unique needs of salon owners, providing a comprehensive solution for effective stylist and client management. Stay organized, enhance customer satisfaction, and elevate your salon operations with our user-friendly platform.
 
 ## Setup/Installation Requirements
+
+This Project assumes you have MySql Server and Workbench  installed if you do not have them installed follow along with these lessons at
+[Learn how to program](https://full-time.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql).
 
 1. Open terminal or command prompt.
 2. Clone the repository by running the following command to your desktop:
 
     ```bash
-    git clone https://github.com/MonBoza/HairSalon.Solution.git
+        git clone https://github.com/MonBoza/HairSalon.Solution.git
+     ```
+
+3. Open the project in your favorite code editor.
+
+4. Navigate to the production directory "HairSalon" and run the follow commands in your terminal to add the following dependencies
+
+    ```bash
+      dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0
     ```
 
-3. Within the production directory "HairSalon", create new file called appsettings.json
-4. Within appsettings.json, put in the following code replacing the <code>uid</code> and the <code>pwd</code> values with your own username and password for MySQL.
+    ```bash
+      dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0
+    ```
+
+5. Within the production directory `HairSalon`, create new file called `appsettings.json`
+
+6. Make sure appsettings.json is added to the .gitignore file and it is added to the repository before pushing with your personal information.
+
+7. Within `appsettings.json`, put in the following code replacing the `uid` and the `pwd` values with your own username and password for MySQL.
 
     ```bash
     {
@@ -59,19 +77,32 @@ This app allows the user to keep track of the employees(hairStylists) and give t
     }
     ```
 
-5. Make sure .gitignore is added to the repository.
-6. Run
+8. Run
 
     ```bash
-    dotnet build
+      dotnet watch run
     ```
+  
+in yor terminal.
 
- in your terminal.
-7. Open the project in your favorite code editor.
+## To import monica_barboza.sql
+
+1. In the MySql Workbench select Navigator > Administration window, select `Data Import/Restore`.
+
+2. In `Import Options` select `Import` from `Self-Contained File`.
+
+3. Under `Default Schema` to be `Imported to`, Select the `New` button
+    * Enter the name of your database "firstName_LastName"
+    * Click OK
+
+4. Navigate to the tab called Import Progress and click Start Import at the bottom right corner of the window.
+
+5. After you are finished with the above steps, reopen the `Navigator > Schemas` tab. Right click and select `Refresh All`.
 
 ## Known Bugs
 
-* no Known bugs
+* No Known bugs
+  * If bugs are discovered please contact the author
 
 ## License
 

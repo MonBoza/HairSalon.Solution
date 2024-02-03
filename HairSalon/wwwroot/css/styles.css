@@ -1,15 +1,34 @@
-
-body{
-  background-color: #f579b4;
-  text-align: center;
+body {
+  background-image: url('~/img/salon.jpg');
+  opacity: 0.8;
 }
 
-h1{
+h1 {
   text-align: center;
-  color: rgb(192, 192, 192);
+  color: rgb(70, 65, 65);
   text-decoration: underline;
 }
-html{
+
+html {
   text-align: center;
   border-color: black solid 5px;
+}
+
+div#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #bfbfbf;
+  background: rgb(9, 172, 237);
+  padding: 8px;
+  font-weight: bold;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+h2 {
+  color: #333;
 }
