@@ -83,7 +83,7 @@ This Project assumes you have MySql Server and Workbench  installed if you do no
     dotnet watch run
     ```
   
-in yor terminal.
+in your terminal.
 
 ## To set up Database
 
