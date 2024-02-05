@@ -12,4 +12,3 @@ namespace HairSalon.Models
     }
    
 }
-

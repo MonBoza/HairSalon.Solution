@@ -5,6 +5,7 @@
 @using HairSalon.Models;
 
 <h2>Clients</h2>
+<p>Click a client to see their details</p>
 <br />
 <br />
 
@@ -15,12 +16,16 @@
 
 @foreach (Client client in Model)
 {
-  <div class="card">
-    <div class="card-body">
-      <h4 class="card-title">@Html.ActionLink($"{client.ClientName}","Details", new {id = client.ClientId})</h4>
+  <div>
+    <div>
+      <h4>@Html.ActionLink($"{client.ClientName}","Details", new {id = client.ClientId})</h4>
     </div>
   </div>
 }
 
-<div>@Html.ActionLink("Add client", "Create", null, new { @class = "btn btn-primary" })</div>
-<div>@Html.ActionLink("Return Home", "Index", "Home", null, new { @class = "btn btn-secondary" })</div>
+<div class="mt-4">
+  <button>@Html.ActionLink("Add client", "Create")</button>
+  <br />
+  <br />
+  <button>@Html.ActionLink("Return Home", "Index", "Home")</button>
+</div>

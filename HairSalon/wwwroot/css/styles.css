@@ -1,27 +1,27 @@
 body {
-  background-image: url('~/img/salon.jpg');
+  background-color: #F5D491;
   opacity: 0.8;
 }
 
 h1 {
   text-align: center;
-  color: rgb(70, 65, 65);
+  color: rgb(173, 140, 173);
   text-decoration: underline;
 }
 
 html {
   text-align: center;
-  border-color: black solid 5px;
+  border-color: #F06C9B solid 5px;
 }
 
-div#footer {
+.footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  color: #bfbfbf;
-  background: rgb(9, 172, 237);
-  padding: 8px;
+  color: #F5D491;
+  background: #61A0AF;
+  padding: 5px;
   font-weight: bold;
 }
 
@@ -30,5 +30,72 @@ div#footer {
 }
 
 h2 {
-  color: #333;
+  color: #61A0AF;
+}
+
+h3#footer {
+  color: #F5D491;
+
+}
+
+h3, h4, h5 {
+  color: #F06C9B;
+}
+
+
+.logo {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border-color: rgb(118, 208, 224) solid 30px;
+}
+
+a {
+  color: #F06C9B;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  color: #35a2bd;
+  font-size: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  color: rgb(143, 105, 147);
+ 
+}
+
+.card {
+  background: #f4aec7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #354a44;
+  border-color: #edeef0;
+}
+
+.btn-primary:hover {
+  background-color: #aecbea;
+  border-color: #2e72be;
 }

@@ -48,7 +48,7 @@ This Project assumes you have MySql Server and Workbench  installed if you do no
 2. Clone the repository by running the following command to your desktop:
 
     ```bash
-        git clone https://github.com/MonBoza/HairSalon.Solution.git
+    git clone https://github.com/MonBoza/HairSalon.Solution.git
      ```
 
 3. Open the project in your favorite code editor.
@@ -56,11 +56,11 @@ This Project assumes you have MySql Server and Workbench  installed if you do no
 4. Navigate to the production directory "HairSalon" and run the follow commands in your terminal to add the following dependencies
 
     ```bash
-      dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0
+    dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0
     ```
 
     ```bash
-      dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0
+    dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0
     ```
 
 5. Within the production directory `HairSalon`, create new file called `appsettings.json`
@@ -80,7 +80,7 @@ This Project assumes you have MySql Server and Workbench  installed if you do no
 8. Run
 
     ```bash
-      dotnet watch run
+    dotnet watch run
     ```
   
 in yor terminal.
@@ -120,4 +120,4 @@ Copyright (c) February 02, 2024 Monica Barboza
 
 ### SQL Schema Diagram
 
-![Schema Diagram](image.png)
+<img src="image.png" alt="Schema Diagram" width="500px" />

@@ -3,27 +3,13 @@
 }
 
 @model HairSalon.Models.Client
-@using HairSalon.Models
 
-<div class="container">
-  <h2>Client Details @Model.ClientName</h2>
-  <hr/>
+<h3>Client Details - @Model.ClientName</h3>
+<hr />
 
-  <div class="row">
-    <div class="col-md-6">
-      <p class="lead">Notes from stylist: @Model.Notes</p>
-      <p class="lead">@Html.DisplayNameFor(model => model.Stylist): @Html.DisplayFor(model => model.Stylist.Name)</p>
-    </div>
-  </div>
+<p>@Model.Notes</p>
+<p>@Html.DisplayNameFor(model => model.Stylist): @Html.DisplayFor(model => model.Stylist.Name)</p>
 
-  <div class="row">
-    <div class="col-md-6">
-      <div class="btn-group">
-        @Html.ActionLink("Edit client", "Edit", new { id = Model.ClientId }, new { @class = "btn btn-primary" })
-        @Html.ActionLink("Delete client", "Delete", new { id = Model.ClientId }, new { @class = "btn btn-danger" })
-        <br/>
-        @Html.ActionLink("Back to list", "Index", null, new { @class = "btn btn-secondary" })
-      </div>
-    </div>
-  </div>
-</div>
+<div>@Html.ActionLink("Edit client", "Edit", new { id = Model.ClientId})</div>
+<div>@Html.ActionLink("Delete client", "Delete", new { id = Model.ClientId})</div>
+<div>@Html.ActionLink("Back to list", "Index")</div>

@@ -26,12 +26,12 @@
 
   <div class="form-group">
     @Html.LabelFor(model => model.Stylist)
-    @Html.DropDownList("StylistId", null, htmlAttributes: new { @class = "form-control" })
+    @Html.DropDownList("StylistId")
   </div>
 
   <input type="submit" value="Save" class="btn btn-primary" />
 }
 
 <div>
-  @Html.ActionLink("Back to List", "Index")
+ <button>@Html.ActionLink("Back to List", "Index")</button> 
 </div>

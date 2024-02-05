@@ -2,10 +2,12 @@
   Layout = "_Layout";
 }
 @using HairSalon.Models;
+<img id="HairSalon" src="~/img/hair.jpg" class="logo">
+<h2 class="text-center">Eau Claire's Salon</h2>
+<h5 class="text-center">A place to track your Stylists and their clients.</h5>
+<br />
 
-<h2>Eau Claire's Salon</h2>
-<h5>A place to track your Stylists and their clients.</h5>
-<br/>
-
-<button>@Html.ActionLink("See all Stylist", "Index", "Stylists" )</button>
-<button>@Html.ActionLink("See all Clients", "Index", "Clients")</button>
+<div class="text-center">
+  <button class="btn btn-primary">@Html.ActionLink("See all Stylists", "Index", "Stylists")</button>
+  <button class="btn btn-primary">@Html.ActionLink("See all Clients", "Index", "Clients")</button>
+</div>

@@ -54,20 +54,37 @@ namespace HairSalon.Controllers
       return RedirectToAction("Index");
     }
     public ActionResult Delete(int id)
+{
+    Stylist thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
+
+    if (thisStylist == null)
     {
-      Stylist thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
-      _db.Stylists.Remove(thisStylist);
-      _db.SaveChanges();
-      return View(thisStylist);
+        // Optionally handle the case where the entity is not found, e.g., show an error message.
+        return RedirectToAction("Index"); // or return a NotFound view
     }
 
-    [HttpPost, ActionName("Delete")]
-    public ActionResult DeleteConfirmed(int id)
+    _db.Stylists.Remove(thisStylist);
+    _db.SaveChanges();
+
+    return View(thisStylist);
+}
+
+[HttpPost, ActionName("Delete")]
+public ActionResult DeleteConfirmed(int id)
+{
+    Stylist thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
+
+    if (thisStylist == null)
     {
-      Stylist thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
-      _db.Stylists.Remove(thisStylist);
-      _db.SaveChanges();
-      return RedirectToAction("Index");
+       
+        return RedirectToAction("Index");
     }
+
+    _db.Stylists.Remove(thisStylist);
+    _db.SaveChanges();
+
+    return RedirectToAction("Index");
+}
+
   }
 }
