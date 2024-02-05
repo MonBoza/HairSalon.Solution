@@ -87,7 +87,7 @@ in yor terminal.
 
 ## To set up Database
 
-To run this application you need to import the monica_barboza.sql file located in the top of the repository To MySQL Workbench
+To run this application you need to import the `monica_barboza.sql` file located in the top of the repository to MySQL Workbench.
 
 1. In the MySql Workbench select Navigator > Administration window, select `Data Import/Restore`.
 
