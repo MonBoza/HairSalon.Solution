@@ -72,7 +72,7 @@ This Project assumes you have MySql Server and Workbench  installed if you do no
     ```bash
     {
       "ConnectionStrings": {
-        "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR-DB-NAME];uid=[YOUR-USER-HERE];pwd=[YOUR-PASSWORD-HERE];"
+        "DefaultConnection": "Server=localhost;Port=3306;database=monica_barboza;uid=[YOUR-USER-HERE];pwd=[YOUR-PASSWORD-HERE];"
       }
     }
     ```
