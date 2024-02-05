@@ -85,19 +85,23 @@ This Project assumes you have MySql Server and Workbench  installed if you do no
   
 in yor terminal.
 
-## To import monica_barboza.sql
+## To set up Database
+
+To run this application you need to import the monica_barboza.sql file located in the top of the repository To MySQL Workbench
 
 1. In the MySql Workbench select Navigator > Administration window, select `Data Import/Restore`.
 
 2. In `Import Options` select `Import` from `Self-Contained File`.
 
-3. Under `Default Schema` to be `Imported to`, Select the `New` button
-    * Enter the name of your database "firstName_LastName"
+3. Navigate to the monica_barboza.sql file.
+
+4. Under `Default Schema` to be `Imported to`, Select the `New` button
+    * Enter the name of your database "monica_barboza"
     * Click OK
 
-4. Navigate to the tab called Import Progress and click Start Import at the bottom right corner of the window.
+5. Navigate to the tab called Import Progress and click Start Import at the bottom right corner of the window.
 
-5. After you are finished with the above steps, reopen the `Navigator > Schemas` tab. Right click and select `Refresh All`.
+6. After you are finished with the above steps, reopen the `Navigator > Schemas` tab. Right click and select `Refresh All`.
 
 ## Known Bugs
 
