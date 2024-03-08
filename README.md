@@ -2,6 +2,8 @@
 
 ## An MVC web application to manage a hair salon employees and their clients
 
+[Try it out!](https://hairsalon-solution.onrender.com/)
+
 ### By Monica Barboza
 
 ## Technologies Used
